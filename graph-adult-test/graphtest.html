@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
+
+        <title>2次元気分尺度グラフテスト</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="./css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- TODC Bootstrap core CSS -->
+        <link href="./css/todc-bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom styles for this template -->
+        <link href="starter-template.css" rel="stylesheet">
+
+        <!-- Just for debugging purposes. Don't actually copy this line! -->
+        <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-masthead navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <!-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    --> <a class="navbar-brand" href="#">二次元グラフテスト(2項目大人版)</a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div>
+        </div>
+
+        <div class="container">
+
+            <div class="starter-template">
+                <h1>心理状態の二次元グラフ活用テスト</h1>
+                <h2>2項目大人版</h2>
+                <p class="lead">以下に数値を入れて送信してください。</p>
+                <form class="form-horizontal" role="form" id="inputForm">
+                    <!--<div class="form-group">
+                        <label for="inputEmail3" class="col-sm-2 control-label">最高な状態</label>
+                        <div class="col-sm-2">
+                            <input type="number" class="form-control" name="d0" placeholder="活性度V" min="-5" max="5">
+                        </div>
+                        <div class="col-sm-2">
+                            <input type="number" class="form-control" name="d1" placeholder="安定度S" min="-5" max="5">
+                        </div>
+                        <label for="inputPassword3" class="col-sm-2 control-label">最低な状態</label>
+                        <div class="col-sm-2">
+                            <input type="number" class="form-control" name="d2" placeholder="活性度V" min="-5" max="5">
+                        </div>
+                        <div class="col-sm-2">
+                            <input type="number" class="form-control" name="d3" placeholder="安定度S" min="-5" max="5">
+                        </div>
+                    </div>
+                    -->
+                    <div class="form-group">
+                        <label for="inputPassword3" class="col-sm-2 control-label">1回目記録(Required)</label>
+                        <div class="col-sm-2">
+                            <input type="number" step="0.01" class="form-control" name="d4" placeholder="活性度V" min="-5" max="5">
+                        </div>
+                        <div class="col-sm-2">
+                            <input type="number" step="0.01" class="form-control" name="d5" placeholder="安定度S" min="-5" max="5">
+                        </div>
+                        <label for="inputPassword3" class="col-sm-2 control-label">2回目記録</label>
+                        <div class="col-sm-2">
+                            <input type="number" step="0.01" class="form-control" name="d6" placeholder="活性度V" min="-5" max="5">
+                        </div>
+                        <div class="col-sm-2">
+                            <input type="number" step="0.01" class="form-control" name="d7" placeholder="安定度S" min="-5" max="5">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputPassword3" class="col-sm-2 control-label">3回目記録</label>
+                        <div class="col-sm-2">
+                            <input type="number" step="0.01" class="form-control" name="d8" placeholder="活性度V" min="-5" max="5">
+                        </div>
+                        <div class="col-sm-2">
+                            <input type="number" step="0.01" class="form-control" name="d9" placeholder="安定度S" min="-5" max="5">
+                        </div>
+                        <label for="inputPassword3" class="col-sm-2 control-label">4回目記録</label>
+                        <div class="col-sm-2">
+                            <input type="number" step="0.01" class="form-control" name="d10" placeholder="活性度V" min="-5" max="10">
+                        </div>
+                        <div class="col-sm-2">
+                            <input type="number" step="0.01" class="form-control" name="d11" placeholder="安定度S" min="-5" max="5">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputPassword3" class="col-sm-2 control-label">5回目記録</label>
+                        <div class="col-sm-2">
+                            <input type="number" step="0.01" class="form-control" name="d12" placeholder="活性度V" min="-5" max="5">
+                        </div>
+                        <div class="col-sm-2">
+                            <input type="number" step="0.01" class="form-control" name="d13" placeholder="安定度S" min="-5" max="5">
+                        </div>
+                        <label for="inputPassword3" class="col-sm-2 control-label">6回目記録</label>
+                        <div class="col-sm-2">
+                            <input type="number" step="0.01" class="form-control" name="d14" placeholder="活性度V" min="-5" max="5">
+                        </div>
+                        <div class="col-sm-2">
+                            <input type="number" step="0.01" class="form-control" name="d15" placeholder="安定度S" min="-5" max="5">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-sm-7">
+                            <button type="submit" class="btn btn-default">送信して画像を表示</button>
+                            <input type="button" class="btn btn-default" value="再描画する" onclick="location.reload();" />
+                        </div>
+                    </div>
+                </form>
+
+            <canvas id="canvasgraph" width="681" height="681"></canvas>
+            </div>
+            <!--<form><input type='button' value='画像に変換' onclick='downloadDataFromCanvas()'></form>
+            <div><img id = 'download'></div>-->
+
+
+        </div><!-- /.container -->
+
+
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="./js/jquery.min.js"></script>
+        <script src="./js/bootstrap.min.js"></script>
+        <!-- canvas graph js -->
+        <script src = "./js/graph.js"></script>
+        <script>
+            //ajax->graphplot.php
+            $('#inputForm').submit(function(event) {
+                // ここでsubmitをキャンセルします。
+                event.preventDefault();
+                var $form = $(this);// パラメータを取り込むFormのID
+                var $button = $form.find('button');
+                console.log($('#inputForm').serialize());
+                $.ajax({
+                    type: "POST",
+                    url: "./php/GraphData.php",
+                    dataType : "json",
+                    data : $('#inputForm').serialize(),
+                    timeout: 5000,
+                    // 送信前
+                    beforeSend: function(xhr, settings) {
+                        // ボタンを無効化し、二重送信を防止
+                        $button.attr('disabled', true);
+                    },
+                    // 応答後
+                    complete: function(xhr, textStatus) {
+                        // ボタンを有効化し、再送信を許可
+                        $button.attr('disabled', false);
+                    },
+                    success: function(data){
+                        drawcanvas("img/2asgraph.png",data);
+                    },
+                    // 通信失敗時の処理
+                    error: function(xhr, textStatus, error) {
+                        alert('1回目の記録は必須項目です。');
+                    }
+
+                });
+                //downloadDataFromCanvas("canvasgraph","download");
+            });
+        </script>
+    </body>
+</html>
